@@ -3,48 +3,50 @@
 @section('content')
 
 <!-- Modal -->
-<div id="productModal" class="hidden fixed z-10 inset-0 overflow-y-auto">
-    <div class="flex items-center justify-center min-h-screen">
-        <div class="relative">
-            <div class="absolute top-0 right-0 pt-2 pr-4">
-                <button id="closeModal" class="text-gray-500 hover:text-gray-700 focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar ao Carrinho</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-3xl">
-                <div class="px-4 py-5 sm:px-6">
-                    <h3 class="text-lg font-medium text-gray-900">name</h3>
-                    <p class="mt-1 max-w-2xl text-sm text-gray-500">description</p>
-                </div>
-                <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
-                    <dl class="sm:divide-y sm:divide-gray-200">
-                        <div class="sm:flex sm:items-center sm:justify-between">
-                            <dt class="text-sm font-medium text-gray-500">Preço</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">R$ price</dd>
+
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="img-fluid rounded" alt="Lanche">
                         </div>
-                        <div class="mt-6 sm:flex sm:items-center sm:justify-between">
-                            <dt class="text-sm font-medium text-gray-500">Quantidade</dt>
-                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                <div class="flex items-center">
-                                    <button id="minusBtn" class="py-2 px-3 font-bold border-r-2">-</button>
-                                    <p id="qty" class="py-2 px-3 text-sm m-0">1</p>
-                                    <button id="plusBtn" class="py-2 px-3 font-bold border-l-2">+</button>
+                        <div class="col-lg-7">
+                            <div class="d-flex flex-column h-100 justify-content-between">
+                                <div>
+                                    <h1 class="font-weight-bold">Nome do Produto</h1>
+                                    <h2 class="text-danger">R$ 10,00</h2>
+                                    <p class="text-muted">Descrição do produto Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
-                            </dd>
+                                <div>
+                                    <h3>Quantidade</h3>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button" id="minusBtn">-</button>
+                                        </div>
+                                        <input type="text" class="form-control text-center" id="qty" value="1">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="plusBtn">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="addCartBtn" class="btn btn-primary btn-lg btn-block">Adicionar ao Carrinho</button>
+                            </div>
                         </div>
-                    </dl>
-                </div>
-                <div class="bg-gray-50 px-4 py-4 sm:px-6 sm:flex sm:flex-row-reverse">
-                    <button id="addCartBtn" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm">
-                        Adicionar ao Carrinho
-                    </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <div class="mx-8">
     <div class="flex flex-row">
@@ -85,6 +87,25 @@
 </div>
 
 <script type="text/javascript">
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const modalBtns = document.querySelectorAll('.open-modal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        modalBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const foodId = btn.getAttribute('data-id');
+                // Abre o modal correspondente ao produto clicado
+                $('#productModal').modal('show');
+            });
+        });
+
+        // Adiciona um ouvinte de evento para fechar manualmente o modal ao clicar no botão "Fechar"
+        closeModalBtn.addEventListener('click', () => {
+            $('#productModal').modal('hide');
+        });
+    });
+
     function docReady(fn) {
         if (document.readyState === "complete" || document.readyState === "interactive") {
             fn;
