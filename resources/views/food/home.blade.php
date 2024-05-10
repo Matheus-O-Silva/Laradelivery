@@ -35,8 +35,10 @@
                                             <button class="btn btn-outline-secondary" type="button" id="plusBtn">+</button>
                                         </div>
                                     </div>
+                                    <h3>Observações</h3>
+                                    <textarea class="form-control" rows="3" id="observations"></textarea>
                                 </div>
-                                <button id="addCartBtn" class="btn btn-primary btn-lg btn-block">Adicionar ao Carrinho</button>
+                                <button id="addCartBtn" class="btn btn-primary btn-lg btn-block mt-3">Adicionar ao Carrinho</button>
                             </div>
                         </div>
                     </div>
@@ -46,41 +48,234 @@
     </div>
 </div>
 
-
-
-<div class="mx-8">
-    <div class="flex flex-row">
-        <div class="flex flex-row space-x-4 flex-grow">
-            <span class="font-weight-bold sort-font my-auto">Categorias</span>
-            <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="/porcoes" class="sort-font">Porções</a>
+<section id="secao-categories" class="sticky-top bg-white border border-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 d-flex align-items-center justify-content-center">
+                <i id="btn-categories-left" class="fa fa-chevron-left text-danger hide"></i>
             </div>
-            <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="/hamburguers" class="sort-font">Hamburguers</a>
+            <div class="col-md-10" style="position: relative;">
+                <ul class="nav nav-pills nav-categorias d-flex" style="font-family: Arial, sans-serif; font-size: 20px; overflow-x: auto;">
+                    <li class="nav-item active"><a class="nav-link text-danger" data-toggle="pill" href="#destaque">DESTAQUE</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" data-toggle="pill" href="#promocao-do-dia">PROMOÇÃO DO DIA</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" data-toggle="pill" href="#opcoes-mais-em-conta">OPÇÕES MAIS EM CONTA</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" data-toggle="pill" href="#artesanal">ARTESANAL</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" data-toggle="pill" href="#combos">COMBOS</a></li>
+                    <!-- Adicione outras categorias aqui -->
+                </ul>
             </div>
-            <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="/acai" class="sort-font">Açaí</a>
-            </div>
-            <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="/bebidas" class="sort-font">Bebidas</a>
+            <div class="col-md-1 d-flex align-items-center justify-content-center">
+                <i id="btn-categories-right" class="fa fa-chevron-right text-danger"></i>
             </div>
         </div>
     </div>
+</section>
+
+
+
+
+
+
+
+<div class="accordion" id="foodAccordion">
+    <div class="card mt-2 m-3">
+        <div class="card-header" id="heading1">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    DESTAQUE
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Alimentos da Categoria 1 -->
+                
+                    <div class="col-lg-3 mb-4">
+                        <div class="card" style="cursor: pointer;">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">Hambúrguer Clássico</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card" style="cursor: pointer;">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">Hambúrguer Vegano</h5>
+                                <p class="card-text">R$ 12,00</p>
+                                <p class="card-text">Uma opção vegetariana saudável e saborosa, repleta de vegetais frescos e proteínas.</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card" style="cursor: pointer;">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">Hambúrguer Duplo</h5>
+                                <p class="card-text">R$ 15,00</p>
+                                <p class="card-text">Para os amantes de hambúrguer que desejam uma dose extra de sabor e saciedade.</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mais alimentos da Categoria 1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mais categorias -->
 </div>
 
-<div class="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
-    @foreach($foods as $data)
-    <div class="rounded-md overflow-hidden shadow-md border-1 border-gray-100">
-        <button class="open-modal focus:outline-none" data-id="{{ $data['id'] }}">
-            <img class="h-48 w-full object-cover" src="{{ $data['picture'] }}" alt="Mountain">
-            <div class="p-4">
-                <div class="font-bold text-xl mb-2">{{ $data['name'] }}</div>
-                <p class="text-gray-700 text-base">R$ {{ $data['price'] }}</p>
+<!-- Adicione mais blocos de código como o acima para outras categorias, se necessário -->
+
+
+<div class="accordion" id="foodAccordion">
+    <div class="card mt-2 m-3">
+        <div class="card-header" id="heading1">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                OPÇÕES MAIS EM CONTA
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Alimentos da Categoria 1 -->
+                
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mais alimentos da Categoria 1 -->
+                </div>
             </div>
-        </button>
+        </div>
     </div>
-    @endforeach
+    <!-- Mais categorias -->
 </div>
+
+<div class="accordion" id="foodAccordion">
+    <div class="card mt-2 m-3">
+        <div class="card-header" id="heading1">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    Categorias 1
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Alimentos da Categoria 1 -->
+                
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mais alimentos da Categoria 1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mais categorias -->
+</div>
+
+
+
 
 <div class="p-5">
     {{ $foods->appends(request()->input())->links() }}
