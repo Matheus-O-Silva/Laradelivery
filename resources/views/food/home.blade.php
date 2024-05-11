@@ -56,11 +56,11 @@
             </div>
             <div class="col-md-10" style="position: relative;">
                 <ul class="nav nav-pills nav-categorias d-flex" style="font-family: Arial, sans-serif; font-size: 20px; overflow-x: auto;">
-                    <li class="nav-item active"><a class="nav-link text-danger" data-toggle="pill" href="#destaque">DESTAQUE</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" data-toggle="pill" href="#promocao-do-dia">PROMOÇÃO DO DIA</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" data-toggle="pill" href="#opcoes-mais-em-conta">OPÇÕES MAIS EM CONTA</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" data-toggle="pill" href="#artesanal">ARTESANAL</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" data-toggle="pill" href="#combos">COMBOS</a></li>
+                    <li class="nav-item active scroll-link"><a class="nav-link text-danger" data-toggle="pill" href="#destaque">DESTAQUE</a></li>
+                    <li class="nav-itema ctive scroll-link"><a class="nav-link text-danger" data-toggle="pill" href="#promocao-do-dia">PROMOÇÃO DO DIA</a></li>
+                    <li class="nav-item active scroll-link"><a class="nav-link text-danger" data-toggle="pill" href="#opcoes-mais-em-conta">OPÇÕES MAIS EM CONTA</a></li>
+                    <li class="nav-item active scroll-link"><a class="nav-link text-danger" data-toggle="pill" href="#artesanal">ARTESANAL</a></li>
+                    <li class="nav-item active scroll-link"><a class="nav-link text-danger" data-toggle="pill" href="#combos">COMBOS</a></li>
                     <!-- Adicione outras categorias aqui -->
                 </ul>
             </div>
@@ -76,18 +76,18 @@
 
 
 
-
-<div class="accordion" id="foodAccordion">
+<hr id="destaque">
+<div class="accordion" style="margin-top: 60px;" id="destaque">
     <div class="card mt-2 m-3">
-        <div class="card-header" id="heading1">
+        <div class="card-header" id="headingDestaque">
             <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDestaque" aria-expanded="true" aria-controls="collapseDestaque">
                     DESTAQUE
                 </button>
             </h2>
         </div>
 
-        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+        <div id="collapseDestaque" class="collapse show" aria-labelledby="headingDestaque" data-parent="#destaque">
             <div class="card-body">
                 <div class="row">
                     <!-- Alimentos da Categoria 1 -->
@@ -136,18 +136,18 @@
 
 <!-- Adicione mais blocos de código como o acima para outras categorias, se necessário -->
 
-
-<div class="accordion" id="foodAccordion">
+<hr id="promocao-do-dia">
+<div class="accordion" style="margin-top: 60px;">
     <div class="card mt-2 m-3">
         <div class="card-header" id="heading1">
             <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                OPÇÕES MAIS EM CONTA
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
+                PROMOCAO DO DIA
                 </button>
             </h2>
         </div>
 
-        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+        <div id="" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
             <div class="card-body">
                 <div class="row">
                     <!-- Alimentos da Categoria 1 -->
@@ -211,17 +211,146 @@
     <!-- Mais categorias -->
 </div>
 
-<div class="accordion" id="foodAccordion">
+<hr id="opcoes-mais-em-conta">
+<div class="accordion" style="margin-top: 60px;">
     <div class="card mt-2 m-3">
         <div class="card-header" id="heading1">
             <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                    Categorias 1
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
+                    OPCOES MAIS EM CONTA
                 </button>
             </h2>
         </div>
 
-        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+        <div id="" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Alimentos da Categoria 1 -->
+                
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mais alimentos da Categoria 1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mais categorias -->
+</div>
+
+<hr id="artesanal">
+<div class="accordion" style="margin-top: 60px;">
+    <div class="card mt-2 m-3">
+        <div class="card-header" id="heading1">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
+                    ARTESANAL
+                </button>
+            </h2>
+        </div>
+
+        <div id="" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Alimentos da Categoria 1 -->
+                
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
+                            <div class="card-body">
+                                <h5 class="card-title">name</h5>
+                                <p class="card-text">R$ 10,00</p>
+                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mais alimentos da Categoria 1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mais categorias -->
+</div>
+
+<hr id="combos">
+<div class="accordion" style="margin-top: 60px;">
+    <div class="card mt-2 m-3">
+        <div class="card-header" id="heading1">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
+                   COMBOS
+                </button>
+            </h2>
+        </div>
+
+        <div id="" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
             <div class="card-body">
                 <div class="row">
                     <!-- Alimentos da Categoria 1 -->
@@ -275,17 +404,38 @@
 </div>
 
 
-
-
 <div class="p-5">
     {{ $foods->appends(request()->input())->links() }}
 </div>
 
 <script type="text/javascript">
 
+    document.querySelectorAll('.scroll-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const sectionHeight = document.getElementById('secao-categories').offsetHeight;
+                const sectionTop = document.getElementById('secao-categories').getBoundingClientRect().top;
+                const offset = - sectionHeight + 300; // Ajuste o valor extra conforme necessário
+                const targetPosition = targetElement.getBoundingClientRect().top;
+                const scrollToPosition = targetPosition + window.pageYOffset + offset - sectionTop;
+                window.scrollTo({
+                    behavior: 'smooth',
+                    top: scrollToPosition
+                });
+            }
+        });
+    });
+
+
+
     document.addEventListener("DOMContentLoaded", function() {
         const modalBtns = document.querySelectorAll('.open-modal');
         const closeModalBtn = document.getElementById('closeModalBtn');
+        const cards = document.querySelectorAll('.card'); // Seleciona todos os elementos com a classe .card
 
         modalBtns.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -295,11 +445,21 @@
             });
         });
 
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Abre o modal ao clicar em qualquer card
+                $('#productModal').modal('show');
+            });
+        });
+
         // Adiciona um ouvinte de evento para fechar manualmente o modal ao clicar no botão "Fechar"
         closeModalBtn.addEventListener('click', () => {
             $('#productModal').modal('hide');
         });
     });
+
+
+    
 
     function docReady(fn) {
         if (document.readyState === "complete" || document.readyState === "interactive") {
