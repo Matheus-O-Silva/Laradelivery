@@ -31,10 +31,9 @@
 
 <body>
     <div id="app" class="min-h-screen flex flex-col">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-danger shadow-sm">
             <div class="container">
-                <a class="navbar-brand font-bold text-xl" href="{{ url('/') }}">
-                    <!-- {{ config('app.name', 'Foodie') }} -->
+                <a class="navbar-brand font-bold text-white" href="{{ url('/') }}">
                     {{ __('Laradelivery') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -48,7 +47,7 @@
                     </ul> -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active relative">
-                            <a class="nav-link" href="{{ url('home') }}">
+                            <a style="color: white;" class="nav-link" href="{{ url('home') }}">
                                 <div class="flex" id="navbtnhome" aria-describedby="tooltiphome" data-tooltip-text="Home">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -61,11 +60,11 @@
                         </li>
                         <!-- disabled link for spacing -->
                         <li class="nav-item disabled">
-                            <a class="nav-link" href=""><span class="sr-only"></a>
+                            <a class="nav-link" style="color: white;" href=""><span class="sr-only"></a>
                         </li>
 
                         <li class="nav-item active relative">
-                            <a class="nav-link" href="{{ url('order') }}">
+                            <a style="color: white;" class="nav-link" href="{{ url('order') }}">
                                 <div class="flex" id="navbtnorderhistory" aria-describedby="tooltiporderhistory" data-tooltip-text="Order History">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
@@ -78,11 +77,11 @@
                         </li>
                         <!-- disabled link for spacing -->
                         <li class="nav-item disabled">
-                            <a class="nav-link" href=""><span class="sr-only"></a>
+                            <a style="color: white;" class="nav-link" href=""><span class="sr-only"></a>
                         </li>
 
                         <li class="nav-item active relative ">
-                            <a class="nav-link" href="{{ url('cart') }}">
+                            <a style="color: white;" class="nav-link" href="{{ url('cart') }}">
                                 <div class="flex" id="navbtncart" aria-describedby="tooltipcart" data-tooltip-text="Cart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -102,7 +101,7 @@
                         </li>
                         <!-- disabled link for spacing -->
                         <li class="nav-item disabled">
-                            <a class="nav-link" href=""><span class="sr-only"></a>
+                            <a style="color: white;" class="nav-link" href=""><span class="sr-only"></a>
                         </li>
 
                         @can('isAdmin')
@@ -130,7 +129,7 @@
                         @guest
                         @if (Route::has('login'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Entrar') }}</a>
+                            <a style="color: white;" class="nav-link" href="{{ route('login') }}">{{ __('Entrar') }}</a>
                         </li>
                         <!-- disabled link for spacing -->
                         <li class="nav-item disabled">
@@ -140,7 +139,7 @@
 
                         @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Cadastrar-se') }}</a>
+                            <a style="color: white;" class="nav-link" href="{{ route('register') }}">{{ __('Cadastrar-se') }}</a>
                         </li>
 
                         @endif
@@ -171,39 +170,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- Remove user modal -->
-            <div class="invisible flex h-screen overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center md:inset-0 h-modal sm:h-full" id="remove-user-modal">
-                <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
-                <div class="relative px-4 w-full max-w-md h-full md:h-auto">
-                    <!-- Modal content -->
-                    <div class="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full">
-                        <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                            <div class="p-1 sm:flex sm:items-start">
-                                <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                                    <!-- Heroicon name: outline/exclamation -->
-                                    {{-- <svg class="h-6 w-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="red" aria-hidden="true">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                                                </svg> --}}
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="-3.5 -3 31 31" stroke="red" strokeWidth={2}>
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                    </svg>
-                                </div>
-                                <div class="pl-1 sm:mt-0 sm:ml-4 sm:text-left">
-                                    <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Are you sure you want to delete the account?</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                            <form name="remove_user_form" id="remove_user_form" method="POST" action='/user/{{Auth::id()}}'>
-                                @csrf
-                                @method('delete')
-                                <button type="submit" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"> Confirm </button>
-                            </form>
-                            <button type="button" id="canceldelete" class="w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-inherit text-base font-medium text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm"> Cancel </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </nav>
 
         <main class="flex-grow py-4 h-full">
@@ -213,6 +179,7 @@
         </main>
         <x-footer />
     </div>
+
     <script>
         window.addEventListener('DOMContentLoaded', () =>{
             const btnDeleteUser = document.querySelector('#deleteuser');
