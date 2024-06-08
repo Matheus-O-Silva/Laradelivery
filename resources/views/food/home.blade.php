@@ -48,6 +48,10 @@
     </div>
 </div>
 
+<div class="full-width-image" style="height: 380px;">
+    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="object-fit: cover; width: 100%; height: 100%;" class="img-fluid" alt="Imagem do estabelecimento">
+</div>
+
 <section id="secao-categories" class="sticky-top bg-white border border-light" style="border:5px solid black; height: 40px; margin-top: -10px;">
     <div class="container">
         <div class="row">
@@ -55,7 +59,7 @@
                 <i id="btn-categories-left" class="fa fa-chevron-left text-danger hide"></i>
             </div>
             <div class="col-md-10" style="position: relative;">
-                <ul class="nav nav-pills nav-categorias d-flex" style="font-family: Arial, sans-serif; font-size: 20px overflow-x: auto;">
+                <ul class="nav nav-pills nav-categorias d-flex" style="font-family: Arial, sans-serif; font-size: 20px; overflow-x: auto;">
                     <li class="nav-item active scroll-link"><a class="nav-link text-danger" data-toggle="pill" href="#destaque">DESTAQUE</a></li>
                     <li class="nav-itema ctive scroll-link"><a class="nav-link text-danger" data-toggle="pill" href="#promocao-do-dia">PROMOÇÃO DO DIA</a></li>
                     <li class="nav-item active scroll-link"><a class="nav-link text-danger" data-toggle="pill" href="#opcoes-mais-em-conta">OPÇÕES MAIS EM CONTA</a></li>

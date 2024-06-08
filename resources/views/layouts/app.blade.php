@@ -172,7 +172,7 @@
             </div>
         </nav>
 
-        <main class="flex-grow py-4 h-full">
+        <main class="flex-grow h-full">
             @include('components.flash_message')
             
             @yield('content')
