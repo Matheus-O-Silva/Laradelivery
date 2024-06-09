@@ -80,10 +80,10 @@
 
 
 
-<hr id="destaque">
-<div class="accordion" style="margin-top: 60px;" id="destaque">
-    <div class="card mt-2 m-3">
-        <div class="card-header" id="headingDestaque">
+<hr id="destaque" style="visibility: hidden; margin-top: -10px;">
+<div class="accordion " style=" border: white;" id="destaque">
+    <div class="card mt-3" style="margin: 5%;">
+        <div class="" id="headingDestaque">
             <h2 class="mb-0">
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDestaque" aria-expanded="true" aria-controls="collapseDestaque">
                     DESTAQUE
@@ -95,41 +95,82 @@
             <div class="card-body">
                 <div class="row">
                     <!-- Alimentos da Categoria 1 -->
-                
-                    <div class="col-lg-3 mb-4">
-                        <div class="card" style="cursor: pointer;">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">Hambúrguer Clássico</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card" style="cursor: pointer;">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">Hambúrguer Vegano</h5>
-                                <p class="card-text">R$ 12,00</p>
-                                <p class="card-text">Uma opção vegetariana saudável e saborosa, repleta de vegetais frescos e proteínas.</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card" style="cursor: pointer;">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">Hambúrguer Duplo</h5>
-                                <p class="card-text">R$ 15,00</p>
-                                <p class="card-text">Para os amantes de hambúrguer que desejam uma dose extra de sabor e saciedade.</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Mais alimentos da Categoria 1 -->
                 </div>
             </div>
@@ -140,134 +181,94 @@
 
 <!-- Adicione mais blocos de código como o acima para outras categorias, se necessário -->
 
-<hr id="promocao-do-dia">
-<div class="accordion" style="margin-top: 60px;">
-    <div class="card mt-2 m-3">
-        <div class="card-header" id="heading1">
+<hr id="promocao-do-dia" style="visibility: hidden; margin-top: -100px; margin-top: -100px;">
+<div class="accordion " style="margin-top: 60px;" id="destaque">
+    <div class="card mt-2" style="margin: 5%;">
+        <div class="" id="headingDestaque">
             <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
-                PROMOCAO DO DIA
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDestaque" aria-expanded="true" aria-controls="collapseDestaque">
+                    PROMOÇÃO DO DIA
                 </button>
             </h2>
         </div>
 
-        <div id="" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+        <div id="collapseDestaque" class="collapse show" aria-labelledby="headingDestaque" data-parent="#destaque">
             <div class="card-body">
                 <div class="row">
                     <!-- Alimentos da Categoria 1 -->
-                
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Mais alimentos da Categoria 1 -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Mais categorias -->
-</div>
-
-<hr id="opcoes-mais-em-conta">
-<div class="accordion" style="margin-top: 60px;">
-    <div class="card mt-2 m-3">
-        <div class="card-header" id="heading1">
-            <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
-                    OPCOES MAIS EM CONTA
-                </button>
-            </h2>
-        </div>
-
-        <div id="" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
-            <div class="card-body">
-                <div class="row">
-                    <!-- Alimentos da Categoria 1 -->
-                
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -279,59 +280,193 @@
     <!-- Mais categorias -->
 </div>
 
-<hr id="artesanal">
-<div class="accordion" style="margin-top: 60px;">
-    <div class="card mt-2 m-3">
-        <div class="card-header" id="heading1">
+<hr id="opcoes-mais-em-conta" style="visibility: hidden; margin-top: -100px;">
+<div class="accordion " style="margin-top: 60px;" id="destaque">
+    <div class="card mt-2" style="margin: 5%;">
+        <div class="" id="headingDestaque">
             <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDestaque" aria-expanded="true" aria-controls="collapseDestaque">
+                    OPÇÕES MAIS EM CONTA
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseDestaque" class="collapse show" aria-labelledby="headingDestaque" data-parent="#destaque">
+            <div class="card-body">
+                <div class="row">
+                    <!-- Alimentos da Categoria 1 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mais alimentos da Categoria 1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mais categorias -->
+</div>
+
+<hr id="artesanal" style="visibility: hidden; margin-top: -100px;">
+<div class="accordion " style="margin-top: 60px;" id="destaque">
+    <div class="card mt-2" style="margin: 5%;">
+        <div class="" id="headingDestaque">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDestaque" aria-expanded="true" aria-controls="collapseDestaque">
                     ARTESANAL
                 </button>
             </h2>
         </div>
 
-        <div id="" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+        <div id="collapseDestaque" class="collapse show" aria-labelledby="headingDestaque" data-parent="#destaque">
             <div class="card-body">
                 <div class="row">
                     <!-- Alimentos da Categoria 1 -->
-                
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -343,59 +478,94 @@
     <!-- Mais categorias -->
 </div>
 
-<hr id="combos">
-<div class="accordion" style="margin-top: 60px;">
-    <div class="card mt-2 m-3">
-        <div class="card-header" id="heading1">
+<hr id="combos" style="visibility: hidden; margin-top: -100px;">
+<div class="accordion " style="margin-top: 60px;" id="destaque">
+    <div class="card mt-2" style="margin: 5%;">
+        <div class="" id="headingDestaque">
             <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
-                   COMBOS
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDestaque" aria-expanded="true" aria-controls="collapseDestaque">
+                    COMBOS
                 </button>
             </h2>
         </div>
 
-        <div id="" class="collapse show" aria-labelledby="heading1" data-parent="#foodAccordion">
+        <div id="collapseDestaque" class="collapse show" aria-labelledby="headingDestaque" data-parent="#destaque">
             <div class="card-body">
                 <div class="row">
                     <!-- Alimentos da Categoria 1 -->
-                
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-4">
-                        <div class="card">
-                            <img src="{{ asset('images/food/hamburguer.jpg') }}" class="card-img-top" alt="Lanche">
-                            <div class="card-body">
-                                <h5 class="card-title">name</h5>
-                                <p class="card-text">R$ 10,00</p>
-                                <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                    <div class="col-lg-6 mb-4">
+                        <div class=>
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('images/food/hamburguer.jpg') }}" style="height: 80%; width: 80% /* Altura ajustada automaticamente */
+    padding: 15%; object-fit: cover; /* Garante que a imagem não ultrapasse a largura do container */
+    border-radius: 15px;" class="card-img img-custom" alt="Hambúrguer Clássico">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                                        <p class="card-text">R$ 10,00</p>
+                                        <p class="card-text">Um delicioso hambúrguer preparado com ingredientes frescos e suculentos.</p>
+                                        <!-- Adicionar botão de adicionar ao carrinho, etc. -->
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
